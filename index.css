@@ -1,4 +1,4 @@
-::root {
+:root {
     --White: hsl(0, 100%, 100%);
     --Purple-100: hsl(275, 100%, 97%);
     --Purple-600: hsl(292, 16%, 49%);
@@ -6,6 +6,78 @@
 }
 
 body {
-    font-size: 1rem; /* 16px */
     font-family: "Work Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./images/background-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--Purple-100);
+}
+
+details:not(:last-child){
+    border-bottom: 0.063em solid var(--Purple-100);
+}
+
+h1 {
+    margin: 0;
+}
+
+h1, summary {
+    color: var(--Purple-950);
+}
+
+p {
+    font-size: 1rem; /* 16px */
+    color: var(--Purple-600);
+}
+
+summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+    content: "";
+    width: 2em; /* 32px */
+    height: 2em; /* 32px */
+    margin-left: 2em; /* 32px */
+    background-image: url(./images/icon-plus.svg);
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+    flex-shrink: 0;
+}
+
+details[open] summary::after {
+    background-image: url(./images/icon-minus.svg);
+}
+
+.accordian {
+    width: 280px;
+    background-color: var(--White);
+    padding: 1.5em; /* 24px */
+    border-radius: 0.5em; /* 8px */
+}
+
+.accordian-header {
+    display: flex;
+    align-items: center;
+    gap: 1em; /* 16px */
+}
+
+.accordian-header img {
+    display: block;
+    width: 1.5em; /* 24px */
+    height: 1.5em; /* 24px */
 }
