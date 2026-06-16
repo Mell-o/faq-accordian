@@ -30,6 +30,10 @@ h1, summary {
     color: var(--Purple-950);
 }
 
+h2 {
+    font-size: 16px;
+}
+
 p {
     font-size: 1rem; /* 16px */
     color: var(--Purple-600);
