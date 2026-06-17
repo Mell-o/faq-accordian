@@ -3,18 +3,22 @@
     --Purple-100: hsl(275, 100%, 97%);
     --Purple-600: hsl(292, 16%, 49%);
     --Purple-950: hsl(292, 42%, 14%);
+    --hover-color: hsl(292, 68%, 46%);
 }
 
 body {
     font-family: "Work Sans", sans-serif;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     min-height: 100vh;
+
     background-image: url(./images/background-pattern-mobile.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% auto;
     background-color: var(--Purple-100);
 }
 
@@ -46,7 +50,7 @@ p {
     font-size: 0.906rem; /* 14.5px */
     line-height: 1.5em; /* 21.75px */
     color: var(--Purple-600);
-    margin: 1.655em 0 0 0; /* 24px */
+    margin: 1.103em 0 0 0; /* 16px */
 }
 
 summary {
@@ -73,12 +77,16 @@ summary::after {
     flex-shrink: 0;
 }
 
+summary:hover h2{
+    color: var(--hover-color);
+}
+
 details[open] summary::after {
     background-image: url(./images/icon-minus.svg);
 }
 
 .accordian {
-    width: 280px;
+    width: clamp(280px, calc(205.82px + 19.78vw), 470px);
     background-color: var(--White);
     padding: 1.5em; /* 24px */
     border-radius: 0.5em; /* 8px */
@@ -97,9 +105,41 @@ details[open] summary::after {
 }
 
 .attribution {
+    display: none;
     font-size: 0.6875rem; /* 11px */
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--Purple-950);
+}
+
+.attribution a:hover {
+    color: var(--hover-color);
+}
+
+@media (min-width: 768px) {
+
+    h1 {
+        font-size: 2.5rem; /* 40px */
+    }
+
+    body {
+        background-image: url(./images/background-pattern-desktop.svg);
+    }
+
+    .accordian {
+        padding: 2em; /* 32px */
+        border-radius: 0.8em; /* 12.8px */
+    }
+
+    .accordian-header img {
+        display: block;
+        width: 2em; /* 32px */
+        height: 2em; /* 32px */
+    }
+
+    .attribution {
+        display: block;
+        margin: 1em 0 0 0; /* 16px */
+    }
 }
