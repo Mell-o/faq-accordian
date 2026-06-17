@@ -11,15 +11,20 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(./images/background-pattern-mobile.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-color: var(--Purple-100);
 }
 
+details {
+    padding-top: 1em; /* 16px */
+}
+
 details:not(:last-child){
     border-bottom: 0.063em solid var(--Purple-100); /* 1px */
+    padding-bottom: 1em; /* 16px */
 }
 
 h1 {
@@ -34,12 +39,14 @@ h1, summary {
 h2 {
     font-size: 1rem; /* 16px */
     font-weight: 600;
+    margin: 0;
 }
 
 p {
     font-size: 0.906rem; /* 14.5px */
     line-height: 1.5em; /* 21.75px */
     color: var(--Purple-600);
+    margin: 1.655em 0 0 0; /* 24px */
 }
 
 summary {
@@ -60,7 +67,7 @@ summary::after {
     height: 2em; /* 32px */
     margin-left: 2em; /* 32px */
     background-image: url(./images/icon-plus.svg);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     flex-shrink: 0;
@@ -87,4 +94,12 @@ details[open] summary::after {
     display: block;
     width: 1.5em; /* 24px */
     height: 1.5em; /* 24px */
+}
+
+.attribution {
+    font-size: 0.6875rem; /* 11px */
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
