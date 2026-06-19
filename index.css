@@ -123,10 +123,6 @@ details[open] summary::after {
         font-size: 2.5rem; /* 40px */
     }
 
-    body {
-        background-image: url(./images/background-pattern-desktop.svg);
-    }
-
     .accordian {
         padding: 2em; /* 32px */
         border-radius: 0.8em; /* 12.8px */
@@ -141,5 +137,11 @@ details[open] summary::after {
     .attribution {
         display: block;
         margin: 1em 0 0 0; /* 16px */
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        background-image: url(./images/background-pattern-desktop.svg);
     }
 }
