@@ -1,0 +1,1 @@
+import { accordianItems } from "./data.js";
