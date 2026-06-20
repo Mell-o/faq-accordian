@@ -56,4 +56,3 @@ In this project, I practiced creating an accordion component and learned how to 
 ## Author
 
 - Frontend Mentor - [@Mell-o](https://www.frontendmentor.io/profile/Mell-o)
-
