@@ -14,8 +14,6 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -29,7 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Mobile](./images/mobile-screenshot.png)
+![Desktop](./images/desktop-screenshot.png)
 
 
 ### Links
