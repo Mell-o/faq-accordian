@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/faq-accordian-using-flexbox-56LNfU_wNN)
 - [Live Site](https://faq-accordian-mellow.netlify.app/)
 
 ## My process
